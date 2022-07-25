@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arima', cursive;
+    font-family: 'Courgette', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* top banner */
+
+.conteinar-1 {
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgb(14, 14, 14);
+    color: aliceblue;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+
+
+}
+
+h1 {
+    font-size: 60px;
+}
+
+header {
+    padding: 40px;
+}
+
+/* blog-post */
+.conteinar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+
+}
+
+.blog-post {
+    width: 75%;
+    border: 1px solid gray;
+    padding: 5%;
+
+}
+
+@media and (max-width:576px) {
+    .conteinar {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and(min-width:577px)and (max-width) {
+    grid-template-columns: repeat(2, 1rf);
+}
+
+.footer {
+    height: 200px;
+    background-color: rgb(14, 14, 14);
+    margin-top: 20px;
+    color: aliceblue;
+    text-align: center;
+    padding: 30px;
+}
+
+br {
+    color: aqua;
+}
+
+.nevigation {
+    margin-right: 20px;
+    text-decoration: none;
+
+}
+
+.nevigation:hover {
+    background-color: coral;
+    padding: 8px;
+    border-radius: 10px;
+    color: aliceblue;
+
+}
+
+.nevigation:visited {
+    color: white;
+
+}
