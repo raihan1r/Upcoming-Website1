@@ -3,6 +3,7 @@ body {
     font-family: 'Courgette', cursive;
     font-family: 'Poppins', sans-serif;
     font-family: 'Rubik', sans-serif;
+    margin: 10px;
 }
 
 /* top banner */
@@ -18,6 +19,7 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 20px;
+    text-align: justify;
 
 
 }
@@ -30,22 +32,55 @@ header {
     padding: 40px;
 }
 
+.header-img {
+    position: relative;
+    left: 100px;
+}
+
+#top-banner-button {
+    background-color: red;
+    color: aliceblue;
+    padding: 15px;
+    border-radius: 10px;
+}
+
 /* blog-post */
 .conteinar {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: 415px 415px 415px;
+    justify-content: end;
 
 }
 
 .blog-post {
     width: 75%;
     border: 1px solid gray;
-    padding: 5%;
+
+    border-radius: 10px;
+    margin-bottom: 10px;
+
 
 }
 
-@media and (max-width:576px) {
+.blog-post-h2 {
+    margin-left: 15px;
+    margin-left: 15px;
+
+}
+
+i {
+    margin: 15px;
+}
+
+.blog-button {
+    width: 30%;
+    margin-left: 20px;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+/* @media and (max-width:576px) {
     .conteinar {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -53,7 +88,7 @@ header {
 
 @media screen and(min-width:577px)and (max-width) {
     grid-template-columns: repeat(2, 1rf);
-}
+} */
 
 .footer {
     height: 200px;
@@ -75,7 +110,7 @@ br {
 }
 
 .nevigation:hover {
-    background-color: coral;
+    background-color: gray;
     padding: 8px;
     border-radius: 10px;
     color: aliceblue;
