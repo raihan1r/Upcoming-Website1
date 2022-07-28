@@ -3,20 +3,15 @@ body {
     font-family: 'Courgette', cursive;
     font-family: 'Poppins', sans-serif;
     font-family: 'Rubik', sans-serif;
-
-
-
-
-
-
-
-
-
-
+    /* width: 1400px; */
 
 }
 
 /* top banner */
+
+.header-img img {}
+
+
 
 .conteinar-1 {
     border: 1px solid gray;
@@ -30,13 +25,20 @@ body {
     padding-right: 30px;
     padding-top: 20px;
     text-align: justify;
+    width: 1321px;
+
+
+
+
 
 
 
 }
 
+
 h1 {
     font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -52,8 +54,11 @@ h1 {
 
 /*  start main-blog */
 .main-blog {
-    border: 1px solid blue;
+
     display: flex;
+
+
+
 
 }
 
@@ -116,7 +121,7 @@ i {
     padding-bottom: 2px;
 }
 
-
+/* start footer */
 
 
 .footer {
@@ -126,7 +131,11 @@ i {
     color: aliceblue;
     text-align: center;
     padding: 30px;
+    /* width: 1321px; */
+
 }
+
+
 
 hr {
     color: aqua;
@@ -158,19 +167,16 @@ hr {
     background-color: black;
     border-radius: 10px;
     margin-right: 30px;
-
-
-
-
-
 }
 
 .botton-box1 {
     height: 252px;
     width: 252px;
     padding: 20px;
+    justify-content: center;
 
     text-align: center;
+
 
 
 }
@@ -179,6 +185,8 @@ hr {
     width: 252px;
     height: 64px;
     text-align: center;
+
+
 
 }
 
@@ -194,4 +202,176 @@ hr {
 #blog {
     background-color: red;
     color: aliceblue;
+}
+
+/* Media Queries */
+/* -------------------------------------
+ ;;;;;;;;; Mobile divices ;;;;;;;;
+-----------------------------------------*/
+@media only screen and (max-width:688px) {
+    .conteinar-1 {
+        width: 334px;
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 2%;
+
+    }
+
+    .main-blog {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .conteinar {
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-img img {
+        width: 233px;
+        height: 245px;
+    }
+
+    .botton-box {
+        height: 312px;
+        width: 312px;
+        margin-bottom: 20px;
+        background-color: white;
+        align-items: center;
+        border-radius: 10px;
+
+    }
+
+
+
+    .footer {
+        height: 412px;
+        background-color: rgb(14, 14, 14);
+        margin-top: 20px;
+        color: aliceblue;
+        text-align: center;
+        padding: 30px;
+        /* width: 1321px; */
+
+    }
+
+
+    .navigations {
+        padding: 10px;
+        text-align: center
+    }
+
+    #top-banner-button {
+        background-color: red;
+        color: aliceblue;
+        padding: 3px;
+        border-radius: 10px;
+        width: 161px;
+        margin: 20px;
+
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+
+
+
+
+
+}
+
+/* -------------------------------------
+ ;;;;;;;;; Tablat divices ;;;;;;;;
+-----------------------------------------*/
+@media only screen and (min-width:688px) and (max-width:992) {
+    .conteinar-1 {
+        /* width: 334px; */
+        width: 734px;
+
+        /* display: flex; */
+        /* flex-direction: column; */
+        text-align: center;
+        align-items: center;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 2%;
+
+    }
+
+    .main-blog {
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .conteinar {
+        grid-template-columns: repeat(2, 1fr);
+        /* flex-direction: column; */
+        align-items: center;
+    }
+
+    .header-img img {
+        width: 233px;
+        height: 245px;
+    }
+
+    .botton-box {
+        height: 312px;
+        width: 312px;
+        margin-bottom: 20px;
+        background-color: white;
+        align-items: center;
+        border-radius: 10px;
+
+    }
+
+
+
+    .footer {
+        height: 412px;
+        background-color: rgb(14, 14, 14);
+        margin-top: 20px;
+        color: aliceblue;
+        text-align: center;
+        padding: 30px;
+        /* width: 1321px; */
+
+    }
+
+
+    .navigations {
+        padding: 10px;
+        text-align: center
+    }
+
+    #top-banner-button {
+        background-color: red;
+        color: aliceblue;
+        padding: 3px;
+        border-radius: 10px;
+        width: 161px;
+        margin: 20px;
+
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+
+
+
+
+
 }
