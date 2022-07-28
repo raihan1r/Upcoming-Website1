@@ -3,7 +3,17 @@ body {
     font-family: 'Courgette', cursive;
     font-family: 'Poppins', sans-serif;
     font-family: 'Rubik', sans-serif;
-    margin: 10px;
+
+
+
+
+
+
+
+
+
+
+
 }
 
 /* top banner */
@@ -22,20 +32,16 @@ body {
     text-align: justify;
 
 
+
 }
 
 h1 {
     font-size: 60px;
 }
 
-header {
-    padding: 40px;
-}
 
-.header-img {
-    position: relative;
-    left: 100px;
-}
+
+
 
 #top-banner-button {
     background-color: red;
@@ -44,51 +50,74 @@ header {
     border-radius: 10px;
 }
 
-/* blog-post */
-.conteinar {
-    display: grid;
-    /* grid-template-columns: repeat(3, 1fr); */
-    grid-template-columns: 415px 415px 415px;
-    justify-content: end;
+/*  start main-blog */
+.main-blog {
+    border: 1px solid blue;
+    display: flex;
 
 }
 
+/* end main blog */
+
+
+
+
+
+
+
+
+
+
+.box1 {
+
+    margin-top: 8%;
+}
+
+
+
+/* strat blog-post */
+.conteinar {
+    display: grid;
+    grid-template-columns: repeat(3, 342px);
+}
+
+.blog-button {
+    height: 32px;
+    width: 100px;
+    text-align: center;
+    margin: 8px;
+
+}
+
+
+
+
 .blog-post {
-    width: 75%;
+
+    height: 362px;
+    width: 312px;
     border: 1px solid gray;
 
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+
+
 
 
 }
 
 .blog-post-h2 {
-    margin-left: 15px;
-    margin-left: 15px;
-
+    margin: 8px;
 }
 
 i {
-    margin: 15px;
+    margin: 8px;
+    padding-bottom: 2px;
 }
 
-.blog-button {
-    width: 30%;
-    margin-left: 20px;
-    font-weight: 700;
-    border-radius: 8px;
-}
 
-/* @media and (max-width:576px) {
-    .conteinar {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
 
-@media screen and(min-width:577px)and (max-width) {
-    grid-template-columns: repeat(2, 1rf);
-} */
 
 .footer {
     height: 200px;
@@ -99,7 +128,7 @@ i {
     padding: 30px;
 }
 
-br {
+hr {
     color: aqua;
 }
 
@@ -120,4 +149,49 @@ br {
 .nevigation:visited {
     color: white;
 
+}
+
+/* start botton box */
+.botton-box {
+    height: 312px;
+    width: 312px;
+    background-color: black;
+    border-radius: 10px;
+    margin-right: 30px;
+
+
+
+
+
+}
+
+.botton-box1 {
+    height: 252px;
+    width: 252px;
+    padding: 20px;
+
+    text-align: center;
+
+
+}
+
+.bottons {
+    width: 252px;
+    height: 64px;
+    text-align: center;
+
+}
+
+.blog {
+    width: 252px;
+    height: 64px;
+    font-weight: 800;
+    margin: 15px;
+    border-radius: 10px;
+
+}
+
+#blog {
+    background-color: red;
+    color: aliceblue;
 }
