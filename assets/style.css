@@ -255,6 +255,17 @@ hr {
 
 }
 
+/* ===================== */
+:visited.id {
+    color: black;
+
+}
+
+.id {
+    text-decoration: none;
+}
+
+
 
 
 
