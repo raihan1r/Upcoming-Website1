@@ -3,11 +3,15 @@ body {
     font-family: 'Courgette', cursive;
     font-family: 'Poppins', sans-serif;
     font-family: 'Rubik', sans-serif;
-
-
-
-
+    max-width: 1400px;
+    margin: auto;
 }
+
+
+
+
+
+
 
 /* top banner */
 
@@ -27,7 +31,7 @@ body {
     padding-right: 30px; */
     padding-top: 20px;
     text-align: justify;
-    width: 100%;
+    width: 1321px;
 
 
 }
@@ -43,10 +47,16 @@ h1 {
 }
 
 #top-banner-button {
+
     background-color: red;
     color: aliceblue;
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
+    width: 161px;
+    margin: 30px;
+
+
+
 }
 
 /*  start main-blog */
@@ -198,6 +208,70 @@ hr {
     color: aliceblue;
 }
 
+/* Upcoming.css */
+/* flag .box1 */
+.flag-box {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.main-flag {
+    width: 312px;
+    height: 242px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 23px;
+
+}
+
+.flag {
+
+    text-align: center;
+
+}
+
+.flag-h3 {
+    margin: 20px;
+}
+
+/* flag-upcoming */
+/* conteinar-box */
+
+
+/* .conteinars-box {
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+} */
+
+.conteinar-boxes {
+    display: flex;
+}
+
+.conteinars-box {
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+
+
+}
+
+
+
+
+
+
+/* ==================footer midea iconl================ */
+.media-icon {
+    display: flex;
+    justify-content: center;
+}
+
+
+.icons {
+    padding: 10px;
+}
+
+/* ====================================================== */
 
 
 /* Media Queries */
@@ -205,6 +279,22 @@ hr {
  ;;;;;;;;; Mobile divices ;;;;;;;;
 -----------------------------------------*/
 @media only screen and (max-width:688px) {
+
+    .conteinars-box {
+        display: grid;
+        grid-template-columns: repeat(1, 340px);
+        justify-content: center;
+
+
+
+    }
+
+    .conteinar-boxes {
+        display: inline;
+
+    }
+
+
     .conteinar-1 {
         width: 100%;
         display: flex;
@@ -232,6 +322,11 @@ hr {
     .header-img img {
         width: 233px;
         height: 245px;
+    }
+
+    .header-img {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .botton-box {
@@ -297,6 +392,22 @@ hr {
  ;;;;;;;;; Tablat divices ;;;;;;;;
 -----------------------------------------*/
 @media only screen and (min-width:688px) and (max-width:992px) {
+
+    .conteinars-box {
+        display: grid;
+        grid-template-columns: repeat(2, 340px);
+        justify-content: center;
+
+
+
+
+    }
+
+    .conteinar-boxes {
+        display: inline;
+
+    }
+
     .conteinar-1 {
         width: 100%;
         text-align: justify;
@@ -312,6 +423,7 @@ hr {
     .main-blog {
         display: flex;
         flex-direction: column;
+
     }
 
     .conteinar {
@@ -322,8 +434,8 @@ hr {
     }
 
     .header-img img {
-        width: 233px;
-        height: 245px;
+        width: 323px;
+        height: 340px;
     }
 
     .botton-box {
@@ -334,8 +446,16 @@ hr {
         align-items: center;
         border-radius: 10px;
 
+
     }
 
+    /* .botton-box1 {} */
+
+    .bottons {
+        display: inline;
+
+
+    }
 
 
     .footer {
@@ -344,7 +464,7 @@ hr {
         margin-top: 20px;
         color: aliceblue;
         text-align: center;
-        padding: 30px;
+        /* padding: 30px; */
         /* width: 1321px; */
 
     }
@@ -361,7 +481,7 @@ hr {
         padding: 3px;
         border-radius: 10px;
         width: 161px;
-        margin: 20px;
+        margin: 15px;
 
     }
 
