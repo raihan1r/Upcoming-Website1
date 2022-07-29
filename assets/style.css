@@ -3,13 +3,15 @@ body {
     font-family: 'Courgette', cursive;
     font-family: 'Poppins', sans-serif;
     font-family: 'Rubik', sans-serif;
-    /* width: 1400px; */
+
+
+
 
 }
 
 /* top banner */
 
-.header-img img {}
+
 
 
 
@@ -21,18 +23,17 @@ body {
     grid-template-columns: repeat(2, 1fr);
     background-color: rgb(14, 14, 14);
     color: aliceblue;
-    padding-left: 30px;
-    padding-right: 30px;
+    /* padding-left: 30px;
+    padding-right: 30px; */
     padding-top: 20px;
     text-align: justify;
-    width: 1321px;
+    width: 100%;
 
 
+}
 
-
-
-
-
+.header-img {
+    padding-left: 20px;
 }
 
 
@@ -40,10 +41,6 @@ h1 {
     font-size: 60px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-
-
-
 
 #top-banner-button {
     background-color: red;
@@ -56,23 +53,9 @@ h1 {
 .main-blog {
 
     display: flex;
-
-
-
-
 }
 
 /* end main blog */
-
-
-
-
-
-
-
-
-
-
 .box1 {
 
     margin-top: 8%;
@@ -84,6 +67,7 @@ h1 {
 .conteinar {
     display: grid;
     grid-template-columns: repeat(3, 342px);
+
 }
 
 .blog-button {
@@ -125,13 +109,23 @@ i {
 
 
 .footer {
-    height: 200px;
+
+
     background-color: rgb(14, 14, 14);
     margin-top: 20px;
     color: aliceblue;
     text-align: center;
     padding: 30px;
-    /* width: 1321px; */
+    width: 1321px;
+
+
+
+}
+
+nav {
+    display: flex;
+    text-align: center;
+    justify-content: center;
 
 }
 
@@ -204,20 +198,20 @@ hr {
     color: aliceblue;
 }
 
+
+
 /* Media Queries */
 /* -------------------------------------
  ;;;;;;;;; Mobile divices ;;;;;;;;
 -----------------------------------------*/
 @media only screen and (max-width:688px) {
     .conteinar-1 {
-        width: 334px;
-
+        width: 100%;
         display: flex;
         flex-direction: column;
         text-align: center;
         align-items: center;
-        padding-left: 3%;
-        padding-right: 3%;
+
         padding-top: 2%;
 
     }
@@ -253,14 +247,23 @@ hr {
 
 
     .footer {
-        height: 412px;
+        width: 100%;
         background-color: rgb(14, 14, 14);
         margin-top: 20px;
         color: aliceblue;
         text-align: center;
-        padding: 30px;
+        /* padding: 30px; */
+
+
         /* width: 1321px; */
 
+    }
+
+    nav {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
     }
 
 
@@ -293,14 +296,12 @@ hr {
 /* -------------------------------------
  ;;;;;;;;; Tablat divices ;;;;;;;;
 -----------------------------------------*/
-@media only screen and (min-width:688px) and (max-width:992) {
+@media only screen and (min-width:688px) and (max-width:992px) {
     .conteinar-1 {
-        /* width: 334px; */
-        width: 734px;
+        width: 100%;
+        text-align: justify;
 
-        /* display: flex; */
-        /* flex-direction: column; */
-        text-align: center;
+        /* text-align: center; */
         align-items: center;
         padding-left: 3%;
         padding-right: 3%;
@@ -309,15 +310,14 @@ hr {
     }
 
     .main-blog {
-        /* display: flex; */
+        display: flex;
         flex-direction: column;
-        align-items: center;
-
     }
 
     .conteinar {
+
         grid-template-columns: repeat(2, 1fr);
-        /* flex-direction: column; */
+        flex-direction: column;
         align-items: center;
     }
 
@@ -339,7 +339,7 @@ hr {
 
 
     .footer {
-        height: 412px;
+        width: 734px;
         background-color: rgb(14, 14, 14);
         margin-top: 20px;
         color: aliceblue;
